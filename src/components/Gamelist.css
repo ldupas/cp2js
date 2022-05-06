@@ -12,10 +12,11 @@
 .gameList_Container_Button {
     display: flex;
     align-items: center;
+    padding-top: 2rem;
+    padding-left: 4rem;
 }
 
 .gameList_Button {
     width: 4rem;
     height: 2rem;
-    background-color: red;
 }
