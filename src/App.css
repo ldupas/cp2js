@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   @apply bg-coral-dark text-coral-default m-0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -16,4 +16,4 @@ code {
   background-color: #ed6c6d;
   padding: 0.3rem;
   border-radius: 3px;
-}
+} */
