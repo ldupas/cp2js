@@ -12,7 +12,7 @@ flex flex-col justify-center
 w-6/12
 m-8">
 
-<Link to={`/game/${game.id}`}><h2>{game.name}</h2></Link>
+<Link to={`/game/${game.id}`}><h2 className='text-coral-color-secondary'>{game.name}</h2></Link>
 <span>release: {game.released}</span>
 <span>rating: {game.rating}</span>
 <span><button 
