@@ -1,11 +1,9 @@
 import React from 'react';
-
-import logo from './logo.png';
 import './App.css';
 import Header from './Header';
 import GameDetails from './GameDetails';
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import GameList from './GameList';
 
 const App = () => {
