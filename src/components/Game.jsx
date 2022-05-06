@@ -2,10 +2,20 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
 import './Game.css'
+import { useNavigate } from 'react-router-dom'
 
 function Game({data}) {
+
+  const navigate = useNavigate();
+
+  const displayDetails = () => {
+    navigate(`/games/${data.id}`);
+  }
+
   return (
-    <div className='game-container'>
+    <div 
+    onClick={displayDetails}
+    className='game-container'>
     <div className='game-img'>
       <img src={data.background_image} alt='image'/>
     </div>

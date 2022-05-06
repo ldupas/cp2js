@@ -35,25 +35,25 @@ function GameList() {
   }
 
   return (
+  <>
     <div className='gameslist-container'>
-    <div>
-    <button 
-    onClick={handleRatingButton}
-    className='rating-button'>Filter by rating</button>
+      <div>
+      <button 
+      onClick={handleRatingButton}
+      className='rating-button'>Filter by rating</button>
+      </div>
+        <ul className='gamelist-ul'>
+        {gamesList &&
+          gamesList.map((game) => {
+            return (
+              <li key={game.id}>
+              <Game data={game} />
+              </li>
+            )
+        })}
+        </ul>
     </div>
-      <ul className='gamelist-ul'>
-      {gamesList &&
-        gamesList.map((game) => {
-          return (
-            <li key={game.id}>
-            <Game data={game} />
-            </li>
-          )
-      })}
-
-
-      </ul>
-    </div>
+  </>
   )
 }
 
