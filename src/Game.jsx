@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Game = ({game}) => {
   return (
@@ -7,7 +7,7 @@ const Game = ({game}) => {
             <li>
             <img src={game.background_image} alt={game.name} />
             <div> {game.name} {game.released} </div>
-            <div>{game.rating}</div>
+            <div> {game.rating} </div>
             </li>
         </ul>
     </div>
