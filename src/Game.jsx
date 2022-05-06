@@ -15,7 +15,6 @@ function Game({name, rating, background_image}) {
     <button> See the game details </button>
     </Link>
         </div>
-
   )
 }
 
