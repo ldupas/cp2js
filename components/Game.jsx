@@ -1,5 +1,6 @@
 import React from 'react';
 import './Game.css';
+import { Link } from 'react-router-dom';
 
 export const Game = ({ game }) => {
   return (
@@ -7,7 +8,9 @@ export const Game = ({ game }) => {
       <div>
         <div className="container-img">
           {' '}
-          <img className="img-games" src={game.background_image} alt={game.name} />
+          <Link to={{ pathname: `/games/${game.id}` }}>
+            <img className="img-games" src={game.background_image} alt={game.name} />
+          </Link>
         </div>
 
         <div>
