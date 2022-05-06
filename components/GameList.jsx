@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
 import Game from './Game';
+import './GameList.css';
 
 export const GameList = () => {
   const [games, setGames] = useState([]);
