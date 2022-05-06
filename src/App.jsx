@@ -4,6 +4,7 @@ import logo from './logo.png';
 import './App.css';
 import Header from './Header';
 import { useState } from 'react/cjs/react.production.min';
+import GameList from "./GameList"
 
 function App() {
 const [name, setName] = useState('react_game');
@@ -12,6 +13,9 @@ const [name, setName] = useState('react_game');
     <div>
 
     <Header name={name}/>
+
+    <GameList />
+
   
     <main className="flex flex-col justify-center items-center h-screen">
       <div className="text-center p-4 pb-8">
