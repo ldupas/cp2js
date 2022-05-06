@@ -1,0 +1,13 @@
+
+.detail_Container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-img-detail {
+  height:30rem;
+  width: 40rem;
+}

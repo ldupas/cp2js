@@ -1,0 +1,10 @@
+.gameList_Container {
+    background-color: black;
+}
+
+.gameList_Container_Element {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100vh;
+}

@@ -22,9 +22,12 @@ const GameDetails = () => {
 
   return (
     <>
-        <div>
-          <h2>{game.id}</h2>
-          <p>{game.released}</p>
+        <div className='detail_Container'>
+          <h2>{game.name}</h2>
+          <img className="game-img-detail" alt={game.name} src={game.background_image} />
+          <h3>ID = {game.id}</h3>
+          <p>Rating = {game.rating}</p>
+          <p>Relased = {game.released}</p>
         </div>
     </>
   )

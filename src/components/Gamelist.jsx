@@ -27,15 +27,17 @@ const gamesRating = () => {
 
   return (
     <>
-      <div>
-         <button onClick={gamesRating}>Filtrer</button>
         <div>
-            { games &&
-            games.filter((game) => !filterGames || game.rating > 4.5).map((game) => (
-              <Game game={game} />
-            ))}
-          </div>
-      </div>
+            <div className="gameList_Container">
+                <button onClick={gamesRating}>Filtrer</button>
+            </div>
+            <div className="gameList_Container_Element">
+                { games &&
+                games.filter((game) => !filterGames || game.rating > 4.5).map((game) => (
+                    <Game game={game} />
+                ))}
+            </div>
+        </div>
     </>
   )
 }

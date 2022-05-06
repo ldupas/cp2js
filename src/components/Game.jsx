@@ -19,7 +19,7 @@ const Game = ({ game }) => {
             <h2>{game.name}</h2>
             <p>{game.rating}</p>
             <img className="game-img" alt={game.name} src={game.background_image} />
-            <button onClick={detail}>Détail</button>
+{/*            <button onClick={detail}>Détail</button> */}
             <Link to={`/game/${game.id}`}><h2>{game.name}</h2></Link>
         </div>
     </>
