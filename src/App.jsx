@@ -3,35 +3,31 @@ import React from 'react';
 import logo from './logo.png';
 import './App.css';
 import Header from './Header';
-import { useState } from 'react/cjs/react.production.min';
 import GameList from "./GameList"
+import GameDetails from './GameDetails';
+import { useState } from 'react/cjs/react.production.min';
+import { Router, Routes, Route } from 'react-router-dom';
 
-function App() {
+const App = () => {
 const [name, setName] = useState('react_game');
 
   return (
+    <Router >
     <div>
 
     <Header name={name}/>
 
     <GameList />
 
-  
-    <main className="flex flex-col justify-center items-center h-screen">
-      <div className="text-center p-4 pb-8">
-        <img src={logo} width="20%" alt="WCS logo" className="my-0 mx-auto" />
-      </div>
-      <div className="text-center p-4 pb-8">
-        <p>Welcome to your fresh, lightweight, React App ! &#127752;</p>
-      </div>
-      <div className="text-center p-4 pb-8">
-        <p>
-          Start in the <code>App.jsx</code> component !
-        </p>
-      </div>
-    </main>
+    <Routes>
+          <Route path="/" element={<GameList />} />
+          <Route path="/games/:id" element={<GameDetails />} />
+          
+    </Routes>
+    
 
     </div>
+    </Router>
   );
 }
 
