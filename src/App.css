@@ -21,3 +21,20 @@ h1,h2,h3,h4,h5{
   font-weight: bold;
   font-size: 1.5rem;
 }
+.btn{
+  background-color: #f0db3c;
+  font-size:1rem;
+  color:#ed6c6d;
+  border-radius: 18px;
+  padding: 0.4rem;
+  box-shadow: 0px 1px 8px #ed6c6d,
+  inset 0 3px 8px #ffffff,
+  inset 0 -3px 8px #59500f;
+}
+.btn:hover{
+  box-shadow: 1px 1px 2px #ed6c6d,
+  inset 0 3px 8px #ffffff,
+  inset 0 -3px 8px #59500f;
+  color:#1d0900;
+  transition: ease-in-out 0.2s;
+}
