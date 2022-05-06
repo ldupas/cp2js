@@ -1,5 +1,6 @@
 .gameslist-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -9,4 +10,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
+}
+
+.rating-button {
+  width: 16rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgb(205, 205, 205);
+  margin-bottom: 2rem;
 }

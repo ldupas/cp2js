@@ -9,6 +9,8 @@ import './GameList.css'
 function GameList() {
 
   const [gamesList, setGamesList] = useState([]);
+  const [buttonClicked, setButtonClicked] = useState(false);
+  const [refreshData, setRefreshData] = useState(false)
   const API_URL = "https://apis.wilders.dev/wild-games/games/"
 
   useEffect(() => {
@@ -19,18 +21,37 @@ function GameList() {
     .then((data) => {
       setGamesList(data);
     })
-  },[]);
+  },[refreshData]);
+
+  const handleRatingButton = () => {
+    if (buttonClicked) { 
+      setButtonClicked(false);
+      setRefreshData(!refreshData);
+    } else {
+      const newArray = gamesList.filter((game) => game.rating >= 4.5);
+      setGamesList(newArray)
+      setButtonClicked(true)
+    }
+  }
 
   return (
     <div className='gameslist-container'>
+    <div>
+    <button 
+    onClick={handleRatingButton}
+    className='rating-button'>Filter by rating</button>
+    </div>
       <ul className='gamelist-ul'>
-      {gamesList.map((game) => {
+      {gamesList &&
+        gamesList.map((game) => {
           return (
             <li key={game.id}>
             <Game data={game} />
             </li>
           )
       })}
+
+
       </ul>
     </div>
   )
