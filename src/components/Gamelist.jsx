@@ -24,10 +24,8 @@ const Gamelist = () => {
 const gamesRating = () => {
     setFilterGames(!filterGames)
 }
-/*
-{games
-    .filter((game) => !showRaiting45 || game.rating > 4.5)
-*/
+
+
   return (
     <>
       <div>

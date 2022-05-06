@@ -2,3 +2,12 @@
     height: 10rem;
     width: 10rem;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 4rem;
+}
