@@ -4,12 +4,11 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Game from "./Game.jsx";
 
-// on passe la fonction getID en props afin d'isoler l'id de chacun des héros.
+
 const Gamelist = () => {
 
    const [games, setGames] = useState([])
    const [filterGames, setFilterGames] = useState(false)
-
 
     // GESTION API
    const url = "https://apis.wilders.dev/wild-games/games/";
