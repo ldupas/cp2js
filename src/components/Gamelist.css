@@ -8,3 +8,14 @@
     gap: 1rem;
     width: 100vh;
 }
+
+.gameList_Container_Button {
+    display: flex;
+    align-items: center;
+}
+
+.gameList_Button {
+    width: 4rem;
+    height: 2rem;
+    background-color: red;
+}

@@ -27,9 +27,9 @@ const gamesRating = () => {
 
   return (
     <>
-        <div>
-            <div className="gameList_Container">
-                <button onClick={gamesRating}>Filtrer</button>
+        <div className="gameList_Container">
+            <div className="gameList_Container_Button">
+                <button className="gameList_Button" onClick={gamesRating}>Filtrer</button>
             </div>
             <div className="gameList_Container_Element">
                 { games &&
