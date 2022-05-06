@@ -1,0 +1,30 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  width: 16rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding-bottom: 2rem;
+}
+
+.game-title {
+  font-weight: 500;
+}
+
+.game-release {
+  font-size: smaller;
+  font-weight: 200;
+}
+
+/* <div class="px-4 py-5 sm:px-6 w-full border dark:bg-gray-800 bg-white shadow mb-2 rounded-md">
+<h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-white">
+    User database
+</h3>
+<p class="mt-1 max-w-2xl text-sm text-gray-500 dark:text-gray-200">
+    Details and informations about user.
+</p>
+</div> */

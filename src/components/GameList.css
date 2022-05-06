@@ -1,0 +1,12 @@
+.gameslist-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gamelist-ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
