@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+  --color-primary: #1d0900;
+  --color-secondary: #f0db3c;
+  --color-text: #ed6c6d;
+}
 
 body {
   @apply bg-coral-dark text-coral-default m-0;
@@ -8,6 +13,7 @@ body {
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-top: 6rem;
 }
 
 code {
@@ -17,24 +23,43 @@ code {
   padding: 0.3rem;
   border-radius: 3px;
 }
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: bold;
   font-size: 1.5rem;
 }
-.btn{
+.navBar {
   background-color: #f0db3c;
-  font-size:1rem;
-  color:#ed6c6d;
+  box-shadow: 0px 2px 12px #ed6c6d;
+}
+.btn {
+  background-color: #f0db3c;
+  font-size: 1rem;
+  color: #ed6c6d;
   border-radius: 18px;
   padding: 0.4rem;
-  box-shadow: 0px 1px 8px #ed6c6d,
-  inset 0 3px 8px #ffffff,
-  inset 0 -3px 8px #59500f;
+  box-shadow: 0px 1px 8px #ed6c6d, inset 0 3px 8px #ffffff, inset 0 -3px 8px #59500f;
 }
-.btn:hover{
-  box-shadow: 1px 1px 2px #ed6c6d,
-  inset 0 3px 8px #ffffff,
-  inset 0 -3px 8px #59500f;
-  color:#1d0900;
+.btn:hover {
+  box-shadow: 1px 1px 2px #ed6c6d, inset 0 3px 8px #ffffff, inset 0 -3px 8px #59500f;
+  color: #1d0900;
+  transition: ease-in-out 0.2s;
+}
+
+.btn2 {
+  background-color: #ed6c6d;
+  font-size: 1rem;
+  color: #f0db3c;
+  font-size: 0.8rem;
+  border-radius: 18px;
+  padding: 0.4rem;
+  box-shadow: 0px 1px 8px #ed6c6d, inset 0 3px 8px #ffffff, inset 0 -3px 8px #59500f;
+}
+.btn2:hover {
+  box-shadow: 1px 1px 2px #ed6c6d, inset 0 3px 8px #ffffff, inset 0 -3px 8px #59500f;
+  color: #1d0900;
   transition: ease-in-out 0.2s;
 }

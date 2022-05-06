@@ -3,9 +3,12 @@ import { Game } from './Game';
 import { useState } from 'react/cjs/react.development';
 import { useEffect } from 'react/cjs/react.development';
 import axios from 'axios';
+import { Navbar } from './Navbar';
+import { Link } from 'react-router-dom';
 
 export const GameList = () => {
   const [games, setGames] = useState([]);
+//   const [deleteGame, setDeleteGame] = useState(false);
 
   const url = 'https://apis.wilders.dev/wild-games/games/';
 
@@ -25,14 +28,15 @@ export const GameList = () => {
 
   return (
     <div
-      className="gameList
-      flex flex-col justify-center items-center
-    ">
-        <h2>GameList</h2>
+      >
+        <Navbar/>
+        <div className="gameList
+      flex flex-col justify-center items-center my-12 gap-8">
+        <h2>GAMELIST</h2>
       <button onClick={onlyTheBest}
       className='btn
       '
-      >Best rated</button>
+      >Show  {bestOnly ?'All' : 'Best'  }</button>
       
       <div className="">
         {games &&
@@ -43,6 +47,7 @@ export const GameList = () => {
                 <Game game={game} />
               </div>
             ))}
+      </div>
       </div>
     </div>
   );

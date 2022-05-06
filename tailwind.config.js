@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       colors: {
         coral: {
+          'color-primary': 'var(--color-primary)',
+          'color-secondary': 'var(--color-secondary)',
+          'color-text': 'var(--color-text)',
           default: 'hsl(360, 78%, 68%)',
           dark: 'hsl(360, 78%, 08%)',
         },
