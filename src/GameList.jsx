@@ -19,7 +19,10 @@ const GameList = () => {
     <div>
         <ul>
             {games && 
-            games.map((game) =>
+            games.filter((game) => {
+                return ((game.rating > 4.5))
+            })
+            .map((game) =>
             <div key={game.id}>
             <Game game={game}
                   name={game.name}
